@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Gala RSVP</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="invitation-header">
+            <h1>You're Invited to our marriage!</h1>
+            <h2>14/02/25</h2>
+        </header>
+
+        <section class="description">
+            <p>"Our love story is taking a beautiful turn, and we want you to be a part of it! Celebrate our wedding on 14 at 4:00AM at Paradise Function Hall. Let's make unforgettable memories together!"</p>
+        </section>
+
+        <section class="rsvp-form">
+            <h3>Type Your mail Below!<br> To get invitation details to your mail</h3>
+        
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="attendance">Will you be attending?</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes, I can't wait!</option>
+                        <option value="no">No, I'll miss the marriage!.</option>
+                    </select>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="confirmationMessage" class="confirmation-message"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
