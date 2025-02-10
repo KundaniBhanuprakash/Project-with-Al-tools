@@ -1,4 +1,4 @@
-// Access the form and relevant elements
+r// Access the form and relevant elements
 const form = document.getElementById('entry-form');
 const nameInput = document.getElementById('name');
 const participantsList = document.getElementById('participants-list');
@@ -37,3 +37,9 @@ drawButton.addEventListener('click', function() {
     winnerDisplay.innerHTML = `<p>🎉 Winner: ${winner} 🍰</p>`;
   }
 });
+resetbutton.addEventListener('click', function() {
+  // Check if there are participants
+    winnerDisplay.innerHTML = '';
+    participantsList.innerHTML = '';
+    participants.length = '';
+  });
