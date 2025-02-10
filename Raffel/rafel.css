@@ -1,4 +1,4 @@
-/* Reset default styles */
+rr/* Reset default styles */
 body, h1, form, input, button {
   margin: 0;
   padding: 0;
@@ -25,6 +25,10 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+.btn-group{
+  display: flex;
+  gap: 10px;
+}
 
 /* Form styles */
 form {
@@ -43,7 +47,7 @@ input[type="text"] {
   border-radius: 4px;
 }
 
-button[type="submit"], #draw-button {
+button[type="submit"], #draw-button , #reset-button {
   width: 100%;
   padding: 8px;
   background-color: #ff4081;
@@ -53,6 +57,9 @@ button[type="submit"], #draw-button {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
+}
+#reset-button:hover{
+  background-color: #d5004e;
 }
 
 button[type="submit"]:hover, #draw-button:hover {
